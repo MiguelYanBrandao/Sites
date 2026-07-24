@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playwrite+IE+Guides&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+</head>
+<body>
+    <header>
+        <div class="interface">
+            <div class="logo">
+                <a href="#">
+                    <img src="" alt="">
+                </a>
+            </div>
+            <nav class="menu-desktop">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Formações</a></li>
+                    <li><a href="#">Sobre mim</a></li>
+
+                </ul>
+            </nav>
+            <div class="btn-contato">
+                <a href="#">
+                    <button>Contato</button>
+                </a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="topo-do-site">
+            <div class="interface">
+               <div class="flex">
+                <div class="txt-topo-site">
+                    <h1>Me chamo Miguel<span>.</span></h1>
+                    <p>Desenvolvedor back e front faço o que tiver
+                        que ser feito e aprendo o que tiver que aprender
+                    </p>
+                    <div class="btn-contato">
+                        <a href="https://wa.me/5583998092615">
+                            <button>Entre em Contato!</button>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="img-topo-site">
+                    <img src="images/WhatsApp Image 2026-07-23 at 13.30.09.jpeg" width="250px" height="250px">
+
+                </div>
+               </div>
+            </div>
+        </div>
+
+    </main>
+  
+    
+</body>
+</html>
+<style>
+    *{
+        margin:0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    body{
+        background-color: #000;
+        height: 100vh;
+    }
+    .interface{
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+    .flex{
+        display: flex;
+    }
+    header{
+        padding: 40px 4%;
+    }
+    header > .interface{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        transition: 2s;
+
+    }
+    header a{
+        color: #858585;
+        text-decoration: none;
+        display: inline-block;
+        
+    }
+    header a:hover{
+        color: #fff;
+        transform: scale(1.05);
+    }
+    header nav ul {
+        list-style-type: none;
+
+    }
+    header nav ul li{
+        display: inline-block;
+        padding: 0 40px;
+
+    }
+     .btn-contato button{
+        padding: 10px 40px;
+        font-size: 18px;
+        font-weight: 700;
+        background-color:#1f6feb;
+        border: 0;
+        border-radius: 60px;
+        cursor:pointer;
+        margin-top: 5px;
+        transition: 2s;
+    }
+      .btn-contato button:hover{
+        box-shadow: 0px 0px 8px #1f6feb;
+        transform: scale(1.05);
+     }
+      .topo-do-site{
+        padding: 40px 4%;
+     }
+     .topo-do-site .flex{
+        align-items: start;
+        justify-content: start;
+    
+        gap: 90px;
+     }
+     .topo-do-site h1{
+        color: #fff;
+        font-size: 42px;
+        line-height: 40px;
+        margin-top: 100px;
+     }
+     .topo-do-site h1 span{
+        color: #1f6feb;
+     }
+     .img-topo-site{
+       margin-left: 300px;
+       margin-top: 150px;
+      
+     }
+     .topo-do-site .txt-topo-site p{
+        color: #fff;
+
+        }
+        .topo-do-site .img-topo-site img{
+            box-shadow: 0px 0px 10px #1f6feb, 
+            0px 0px 10px #1f6feb;
+            border: 2px solid #2565c4
+            ;
+            position: relative;
+            animation: flutuar 2s ease-in-out infinite alternate;
+        }
+
+     
+     @keyframes flutuar{
+        0%{
+            top: 0;
+        }
+        100%{
+            top: 30px;
+        }
+     }
+
+     
+     
+    
+    
+
+
+</style>
